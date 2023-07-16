@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/07e5ac0c0d.js" crossorigin="anonymous"></script>
+  <title>ToDo List</title>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="title">ToDo List</h1>
+      <div class="search-container">
+        <input class="searchBar" type="text" id="search" placeholder="Search...">
+        <i class="fa fa-search"></i>
+      </div>
+    </header>
+
+    <div class="filter">
+      <button type="button" class="filter-btn" id="new"><i class="fas fa-long-arrow-alt-up"></i>&nbsp; Newest First</button>
+      <button type="button" class="filter-btn" id="old"><i class="fas fa-long-arrow-alt-down"></i>&nbsp; Oldest First </button>
+    </div>
+
+    <form class="add-container mb-3" id="add-container">
+      <input type="text" id="addItem" placeholder="Add Item...">
+      <input type="submit" class="add-button" id="addButton" value="Add"></input>
+    </form>
+
+    <div class="itemList" id="itemList">
+      <ul id="items" class="list-group">
+        <li class="list-group-item mb-1"><span>Wash dishes</span> <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1"><span>Mop the floor</span> <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1"><span>Read for 1 hour</span> <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+        <li class="list-group-item mb-1"><span>Exercise for 30 minutes</span> <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+      </ul>
+    </div>
+   </div><!-- End container -->
+  
+  <script src="main.js"></script>
+</body>
+</html>
